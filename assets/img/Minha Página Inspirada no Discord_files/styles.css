@@ -1,0 +1,337 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('../img/Header\ Background.png');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #7289da;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header i {
+    font-size: 2rem;
+    color: #7289da;
+    margin-right: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-left: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.server-list {
+    width: 25%;
+    background-color: #36393f;
+    color: #fff;
+}
+
+.chat {
+    flex: 1;
+    background-color: #f0f0f0;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #23272A;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+    z-index: 0;
+}
+.footer {
+    background-color: #36393f;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    max-width: 200px;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer-line {
+    background-color: #8a2be2;
+    height: 2px;
+    border: none;
+    margin: 20px 0;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.footer-bottom img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.open-discord-button {
+    background-color: #8a2be2;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+open-discord-button {
+    background-color: #fff;
+    color: #8a2be2;
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.discord-icon {
+    color: #fff; /* Cor branca */
+}
+
+.main {
+    text-align: center;
+    margin-top: 50px; /* Ajuste a margem conforme necessário */
+}
+
+
+
+/* Estilos existentes */
+
+@media screen and (max-width: 768px) {
+    .server-list {
+        flex-direction: column; /* Empilha os elementos em telas menores */
+        align-items: center;
+        grid-template-columns: 1fr;
+    }
+
+    .server-list img {
+        grid-row: auto; /* Deixa a imagem ocupar uma linha na grid */
+    }
+
+    .server-list .text-content {
+        margin: 20px 0; /* Espaço entre a imagem e o texto em telas menores */
+    }
+    .menu-icon {
+        display: block;
+    }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        display: none;
+        list-style: none;
+        text-align: center;
+    }
+
+    nav.active ul {
+        display: block;
+    }
+
+    nav li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .server-list,
+    .chat {
+        width: 100%;
+    }
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-list {
+        margin-bottom: 20px;
+    }
+}
+
+.header-content {
+    text-align: center;
+    margin-top: 50px; /* Ajuste a margem conforme necessário */
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.background-image {
+    background-image: url('../img/Header\ Background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem; /* Ajuste o espaçamento conforme necessário */
+    position: relative; /* Adicione esta linha */
+}
+
+
+p {
+    text-align: center;
+    width: auto;
+}
+
+.header-text,
+p {
+    color: #fff;
+}
+
+.download-button,
+.open-discord-button {
+    display: inline;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.download-button {
+    background-color: white;
+    color: #313338;
+    border: none;
+}
+
+.open-discord-button {
+    background-color: #313338;
+    color: white;
+    border: 2px solid #7289da;
+}
+
+.download-button i {
+    margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+}
+
+.server-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px; /* Espaço de 30px abaixo da section */
+}
+
+.server-list img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.server-list .text-content {
+    margin-left: 30px; /* Espaço de 30px à esquerda do texto */
+    flex: 1; /* Ocupa o restante do espaço disponível */
+    max-width: 600px;
+}
+
+.server-list h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.server-list p {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.featureImage-3YcglB {
+    max-width: 100%;
+    height: auto;
+}
+
+.description-n9V3Wn {
+    margin-left: 30px; /* Espaço entre a imagem e o texto */
+    max-width: 600px;
+}
+
+.text-2H5FnP {
+    margin-left: 600px;
+    width: 300px;
+    margin-top: -400px;
+}
+
+.h2-1JkdZe {
+    margin-left: 600px;
+    width: 300px;
+    margin-top: -500px;
+}
+

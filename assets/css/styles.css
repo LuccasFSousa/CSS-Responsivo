@@ -1,0 +1,379 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: grid;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4E1EF5;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.menu li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-button {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background-color: #4E1EF5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 999;
+    display: none; /* Adicionado para esconder inicialmente */
+}
+
+.open-discord {
+    border: none;
+    background-color: white;
+    color: #5865F2;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.main {
+    text-align: center;
+    margin: 0;
+    background-image: url('/assets/img/Header Background.png');
+    background-size: cover; /* Adiciona a propriedade cover */
+    background-repeat: no-repeat;
+    background-position: center top; /* Mantém a posição no topo */
+    padding: 94px 20px;
+    min-height: 500px;
+}
+
+.main h1 {
+    font-family: var(--font-headline);
+    color: white;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 95%;
+    text-transform: uppercase;
+    text-rendering: geometricPrecision;
+}
+
+.main p {
+    margin-top: 40px;
+    color: white;
+    font-size: clamp(16px, 2vw, 20px);
+    line-height: 1.625;
+    text-align: center;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+  }
+  
+  .section-1 .text-content {
+    order: 1;
+  }
+  
+  .section-1 .section-image {
+    order: 2;
+  }
+  
+  .section-2 .text-content {
+    order: 2;
+  }
+  
+  .section-2 .section-image {
+    order: 1;
+  }
+  
+  .section-image {
+    max-width: 100%;
+    margin: 0 20px;
+  }
+  
+  .text-content {
+    max-width: 400px;
+  }
+  
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.centered-button {
+    border: none;
+    background-color: #5865F2;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.centered-button:focus {
+    outline: none;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.cta-buttons {
+    display: inline;
+    flex-direction: column; /* Coluna em vez de linha */
+    align-items: center; /* Centraliza na horizontal */
+  }
+  
+  .download-button {
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 10px;
+  }
+
+  .open-in-browser {
+    border: none;
+    background-color: black;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 100px;
+  }
+
+  .fas {
+    padding: 0px 5px;
+  }
+  
+  .cta-buttons button:focus {
+    outline: none;
+  }
+
+.footer {
+    background-color: #23272A;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 1 1 20%;
+    margin-top: 10px;
+    margin-right: 1px;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+.column h3 {
+    color: #5865F2;
+    margin-bottom: 1px;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.column li {
+    margin: 2px 0;
+}
+
+.language-selector {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+.language-selector ul {
+    list-style: none;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.language-selector li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.language-selector a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Adicionado para que os ícones fiquem em uma linha */
+}
+
+.social-icons a {
+    margin: 5px; /* Espaço entre os ícones */
+}
+
+.fab {
+    color: white;
+    justify-content: left;
+    margin-left: 1px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons i {
+    font-size: 24px;
+}
+
+.purple-line {
+    background-color: #5865F2;
+    height: 2px;
+    border: none;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.discord-info {
+    display: flex;
+    align-items: center;
+    
+}
+
+.discord-info i {
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+.discord-info button {
+    border: none;
+    background-color: #5865F2;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.discord-info button:focus {
+    outline: none;
+}
+
+/* ... (seu código atual) */
+
+@media screen and (max-width: 780px) {
+    
+    
+    
+    .menu ul.active + .close-menu {
+        display: block; /* Mostra quando o menu está ativo */
+    }
+    
+    .open-discord {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        color: black;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .menu ul.active {
+        max-height: 300px; /* ou o valor que desejar */
+    }
+    .menu ul li {
+        padding: 10px 20px;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 18px;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .main {
+        padding: 94px 10px;
+    }
+
+    .section-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-image {
+        margin: 20px 0;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .column {
+        flex: 1 1 45%;
+        margin-top: 10px;
+        margin-right: 1px;
+    }
+
+    .column:last-child {
+        margin-right: 0;
+    }
+}
